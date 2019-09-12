@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .card(style='width: 42rem;')
+    .card-header
+      h4 Mensaje DonutsBot a todos
+    .card-body(style='height: 16rem; overflow-x: scroll')
+      form(action="/enviomsg", method="post").form-inline
+        .form-group.mx-sm-3.mb-2
+          input#mensaje.form-control(type='text', value='' placeholder='Mensaje' style='width: 20rem' name='mensaje')
+          input#boton.btn.btn-primary.btn-lg.active( type='submit', aria-pressed='true' value='Enviar')
+    .card-footer
+      p
+        | By Rocío, Rubén, Alba y David
+
+
+
+
